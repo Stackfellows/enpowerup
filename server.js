@@ -24,8 +24,8 @@ app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
 
 // ✅ Added route to handle root URL
-app.get('/', (req, res) => {
-  res.send('✅ EnPowerUp API is live and running!');
+app.get("/", (req, res) => {
+  res.send("✅ EnPowerUp API is live and running!");
 });
 
 const PORT = process.env.PORT || 5000;
